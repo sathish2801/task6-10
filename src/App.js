@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import ImageCarousel from './component/ImageCarousel';
+import TooltipImplementation from './component/TooltipImplementation';
 
-function App() {
+import TabbedContent from './component/TabbedContent';
+import './App.css'; // Optional: for additional styling
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ImageCarousel />
+      <TooltipImplementation />
+      <TabbedContent />
     </div>
   );
-}
+};
 
 export default App;
